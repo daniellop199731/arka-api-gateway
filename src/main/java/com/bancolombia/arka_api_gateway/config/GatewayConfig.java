@@ -18,11 +18,11 @@ public class GatewayConfig {
                 .uri("lb://hellow-world-service")
             )
             // Cotizador Service routes
-            /*.route("cotizador", r -> r
+            .route("cotizador", r -> r
                 .path("/api/cotizador/**")
                 .filters(f -> f.stripPrefix(2))
                 .uri("lb://arka-cotizador")
-            )
+            )/*
             // Gestor Solicitudes Service routes
             .route("gestor-solicitudes", r -> r
                 .path("/api/gestor/**")
