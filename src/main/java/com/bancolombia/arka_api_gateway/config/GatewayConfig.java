@@ -17,6 +17,12 @@ public class GatewayConfig {
                 .filters(f -> f.stripPrefix(2))
                 .uri("lb://hellow-world-service")
             )
+            //Arka Service routes
+            .route("arka", r -> r
+                .path("/api/arka/**")
+                .filters(f -> f.stripPrefix(2))
+                .uri("lb://arka")
+            )            
             // Cotizador Service routes
             .route("cotizador", r -> r
                 .path("/api/cotizador/**")
